@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ds_systems_project.mapreduceui.UI">
+
+    <EditText
+        android:id="@+id/lat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/lat1"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/lat1_text"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="numberDecimal"
+        android:layout_alignLeft="@+id/long1_text"
+        android:layout_alignStart="@+id/long1_text" />
+
+    <EditText
+        android:id="@+id/long1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/long1"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:layout_toLeftOf="@id/long1_text"
+        android:layout_alignTop="@+id/long1_text"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/long1_text"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@+id/lat1_text"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_alignLeft="@+id/lat2_text"
+        android:layout_alignStart="@+id/lat2_text" />
+
+    <EditText
+        android:id="@+id/lat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/lat2"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@id/lat2_text"
+        android:layout_below="@+id/long1"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/lat2_text"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_alignTop="@+id/lat2"
+        android:inputType="numberDecimal"
+        android:layout_alignLeft="@+id/long2_text"
+        android:layout_alignStart="@+id/long2_text"
+        />
+
+    <EditText
+        android:id="@+id/long2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/long2"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:layout_toLeftOf="@id/long2_text"
+        android:layout_below="@+id/lat2_text"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/long2_text"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@+id/lat2_text"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_alignLeft="@+id/time1_text"
+        android:layout_alignStart="@+id/time1_text"
+        />
+
+    <EditText
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/time1"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/long2_text"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/time1_text"
+        android:inputType="datetime"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@+id/lat2_text"
+        android:layout_alignTop="@+id/time1"
+        android:layout_alignLeft="@+id/time2_text"
+        />
+
+    <EditText
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/time2"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:layout_below="@+id/time1_text"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/time2_text"
+        android:inputType="datetime"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@+id/time1_text"
+        android:layout_alignTop="@+id/time2"
+        android:layout_toRightOf="@+id/sub_button"
+        android:layout_toEndOf="@+id/sub_button" />
+
+    <EditText
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/results"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:layout_below="@+id/time2"
+        android:layout_marginTop="80dp"
+        />
+
+    <EditText
+        android:id="@+id/results_text"
+        android:inputType="number"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_alignTop="@+id/results"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/sub_button"
+        android:layout_toEndOf="@+id/sub_button" />
+
+    <Button
+        android:id="@+id/sub_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_button"
+        android:onClick="startMap"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

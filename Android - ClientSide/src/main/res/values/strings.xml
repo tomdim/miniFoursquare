@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DDJS App</string>
+    <string name="lat1">Insert Latitude 1: </string>
+    <string name="long1">Insert Longitude 1: </string>
+    <string name="lat2">Insert Latitude 2: </string>
+    <string name="long2">Insert Longitude 2: </string>
+    <string name="time1">From Datetime: </string>
+    <string name="time2">To Datetime: </string>
+    <string name="results">Number of results: </string>
+    <string name="sub_button">Submit</string>
+    <string name="title_activity_map">Map</string>
+    <string name="display_photos">POI_Data</string>
+</resources>
